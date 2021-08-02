@@ -3,6 +3,7 @@ import ReactPlayer from 'react-player';
 import { config } from '../../config';
 import { TimerUtil } from '../../Utils/TimerUtil';
 import { ArrowButton, CoverResizer } from '../Atoms';
+import { FakeMapFooter } from '../Atoms/FakeMapFooter';
 import './FakeMapPage.css';
 
 type FakeMapProps = {};
@@ -73,6 +74,7 @@ const FakeMapPageElement: React.FC<FakeMapProps> = (props) => {
       </CoverResizer>
       <ArrowButton left className="left-arrow-button" onPress={handlePressLeft} />
       <ArrowButton right className="right-arrow-button" onPress={handlePressRight} />
+      <FakeMapFooter />
     </div>
   );
 };
