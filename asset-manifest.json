@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/jperlmaps/static/css/main.42d096e1.chunk.css",
-    "main.js": "/jperlmaps/static/js/main.f5028959.chunk.js",
-    "main.js.map": "/jperlmaps/static/js/main.f5028959.chunk.js.map",
+    "main.js": "/jperlmaps/static/js/main.b0aea155.chunk.js",
+    "main.js.map": "/jperlmaps/static/js/main.b0aea155.chunk.js.map",
     "runtime-main.js": "/jperlmaps/static/js/runtime-main.dfebfa0c.js",
     "runtime-main.js.map": "/jperlmaps/static/js/runtime-main.dfebfa0c.js.map",
     "static/js/2.7417be25.chunk.js": "/jperlmaps/static/js/2.7417be25.chunk.js",
@@ -12,13 +12,12 @@
     "index.html": "/jperlmaps/index.html",
     "static/css/main.42d096e1.chunk.css.map": "/jperlmaps/static/css/main.42d096e1.chunk.css.map",
     "static/js/2.7417be25.chunk.js.LICENSE.txt": "/jperlmaps/static/js/2.7417be25.chunk.js.LICENSE.txt",
-    "static/media/arrow.959ef8d9.svg": "/jperlmaps/static/media/arrow.959ef8d9.svg",
-    "static/media/compass.ddc73d2d.svg": "/jperlmaps/static/media/compass.ddc73d2d.svg"
+    "static/media/arrow.959ef8d9.svg": "/jperlmaps/static/media/arrow.959ef8d9.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.dfebfa0c.js",
     "static/js/2.7417be25.chunk.js",
     "static/css/main.42d096e1.chunk.css",
-    "static/js/main.f5028959.chunk.js"
+    "static/js/main.b0aea155.chunk.js"
   ]
 }
