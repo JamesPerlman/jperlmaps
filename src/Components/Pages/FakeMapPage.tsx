@@ -12,10 +12,13 @@ const FakeMapPageElement: React.FC<FakeMapProps> = (props) => {
   const currentStep = useRef<number>(0);
   const isPlaying = useRef<boolean>(false);
   const playerRef = useRef<ReactPlayer | null>();
+  const queueNextPlay = useRef<boolean>(false);
+  const nextPlayDirection = useRef<number>(0);
 
 
   const handlePlay = (toStep: number) => {
     if (isPlaying.current) {
+      queueNextPlay.current = true;
       return;
     }
 
@@ -36,16 +39,22 @@ const FakeMapPageElement: React.FC<FakeMapProps> = (props) => {
       () => {
         isPlaying.current = false;
         currentStep.current = nextStep;
+        if (queueNextPlay.current === true) {
+          queueNextPlay.current = false;
+          handlePlay(currentStep.current + nextPlayDirection.current);
+        }
       },
     );
   };
 
   const handlePressLeft = () => {
     handlePlay(currentStep.current - 1);
+    nextPlayDirection.current = -1;
   };
 
   const handlePressRight = () => {
     handlePlay(currentStep.current + 1);
+    nextPlayDirection.current = 1;
   };
 
   return (
