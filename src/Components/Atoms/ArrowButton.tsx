@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+import arrowIcon from '../../images/arrow.svg';
+import './ArrowButton.css';
 
 type ArrowButtonProps = {
   className?: string;
@@ -15,7 +17,18 @@ const ArrowButtonElement: React.FC<ArrowButtonProps> = (props) => {
 
   return (
     <div className={className} style={style}>
-      <a onMouseDown={() => onPress()}>{isLeft ? 'LEFT' : 'RIGHT'}</a>
+      <a style={{ cursor: 'pointer' }} onMouseDown={() => onPress()}>
+        <img
+          src={arrowIcon}
+          className="arrow-button"
+          style={{
+            transform: isLeft ? 'scaleX(-1)' : undefined,
+          }}
+          width="100px"
+          height="100px"
+          alt="left"
+        />
+      </a>
     </div>
   );
 };

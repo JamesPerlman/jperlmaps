@@ -1,0 +1,8 @@
+.arrow-button {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.arrow-button:hover {
+  opacity: 1;
+}
